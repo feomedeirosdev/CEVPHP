@@ -1,4 +1,4 @@
-Projeto Web (LAMP Stack)
+# Projeto Web (LAMP Stack)
 Projeto desenvolvido em ambiente Linux Mint utilizando a stack LAMP (Apache, MariaDB, PHP).
 
 Tecnologias
