@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    /* Fontes */
+    --bf: "Roboto Flex", sans-serif;
+    --tf: "Roboto Condensed", sans-serif;
+    --mf: "Roboto Mono", monospace;
+    /* Paleta de Cores */
+    --lc: #FFFFFF;
+    --mc: #808080;
+    --dc: #000000;
+}
+
+*, *::before, *::after {margin: 0; padding: 0; border: 0; box-sizing: border-box;}
+
+body {
+    height: 100%;
+    font-family: var(--bf);
+    background-color: var(--mc);
+    color: var(--dc);
+}
+
+.header {
+    padding: 30px 10px;
+    font-family: var(--tf);
+    background-image: linear-gradient(to bottom, var(--dc), var(--mc));
+    color: var(--lc);
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.7);
+}
+
+.form {
+    background-color: var(--lc);
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--mc);
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.9);
+}
+
+.subtitle {
+    font-family: var(--tf);
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9);
+}
+
+.input {
+    background-color: transparent;
+    border: 1px solid var(--dc);
+    border-radius: 3px;
+    padding: 3px 5px;
+}
+
+.input::placeholder {
+    color: var(--lc);
+    opacity: 0.7; 
+    font-style: italic;
+}
+
+.btn {
+    display: block;
+    background-color: var(--dc);
+    font-size: 1.5em;
+    color: var(--lc);
+    font-family: var(--tf);
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 7px 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+}
+
+.resp {
+    background-color: red;
+}
+
+.footer {
+    background-color: var(--dc);
+    /* background-image: linear-gradient(to top, var(--dc), var(--mc)); */
+    color: var(--lc);
+    text-align: center;
+    padding: 20px;
+}

@@ -46,6 +46,16 @@ body{
     border-radius: 5px;
 }
 
+.back {
+    display: block;
+    text-align: right;
+    width: 100%;
+    background-image: linear-gradient(to right, transparent, var(--mc));
+    color: var(--dc);
+    padding: 5px 10px;
+    font-weight: 700;
+    text-decoration: none;
+}
 
 .form {
     max-width: 400px;
