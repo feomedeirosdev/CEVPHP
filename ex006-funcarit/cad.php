@@ -68,25 +68,47 @@
                 <h2>intdiv()</h2>
                 <?php
                     $dividendo = (int)($_GET["nm_dividendo"] ?? 0);
-                    $divisor = (int)($_GET["nm_divisor"] ?? 0);
+                    $divisor = (int)($_GET["nm_divisor"] ?: 1);
                     $cociente = intdiv($dividendo, $divisor);
                     $resto = ($dividendo % $divisor);
                 ?>
-                <p class="resp">E entre os valores <?= $dividendo?> e <?= $divisor?> é:</p>
+                <p class="resp">Entre os valores <?= $dividendo?> e <?= $divisor?></p>
                 <p class="resp">o cociente é <?= $cociente?></p>
                 <p class="resp">e o resto é <?= $resto?></p>
             </section>
 
-            <!-- 
             <section class="section">
-                <h2>z</h2>
-                <label class="label" for="id_z1">z1</label>
-                <input class="inputtext" type="text" name="nm_z1" id="id_z1">
-                <br />
-                <label class="label" for="id_z2">z2</label>
-                <input class="inputtext" type="text" name="nm_z2" id="id_z2"> 
+                <h2>min(), max()</h2>
+                <?php
+                    $listnum = $_GET["nm_listnum"] ?? 0;
+                    if (!empty($listnum)) {
+                        $plistnum = explode(",", $listnum);
+                        $plistnum = array_map('floatval', $plistnum);
+                        $min = min($plistnum);
+                        $max = max($plistnum);
+                    };
+                ?>
+                <p class="resp">Dada a lista: [<?= $listnum?>]</p>
+                <p class="resp">seu menor valor é <?= $min?></p>
+                <p class="resp">e seu maior valor é <?= $max?></p>
+            </section>
+
+            <section class="section">
+                <h2>pi() e M_PI</h2>
+                <p class="resp">pi(): <?= pi()?></p>
+                <p class="resp">M_PI: <?= M_PI?></p>
+            </section>
+
+            <section class="section">
+                <h2>pow()</h2>
+                <?php
+                    $base = (float)($_GET["nm_base"] ?: 1);
+                    $exp = (float)($_GET["nm_exp"] ?: 0);
+                    $pow = pow($base, $exp)
+                ?>
+                <p class="resp">A potência de <?= $exp ?> na base <?= $base ?></p>
+                <p class="resp">é <?= $pow ?></p>
             </section> 
-            -->
 
             <button type="button" class="btn" onclick="history.back()">Voltar</button>
         </form>
