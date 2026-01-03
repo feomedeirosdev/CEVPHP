@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    /* Fontes */
+    --fb: "Roboto Flex", sans-serif;
+    --ft: "Roboto Condensed", sans-serif;
+    --fm: "Roboto Mono", monospace;
+
+    /* Cores */
+    /* --lc: #ffffff;
+    --mc: #808080;
+    --dc: #000000; */
+
+    /* --lc: #E1E8ED;
+    --mc: #607D8B;
+    --dc: #263238; */
+
+    /* --lc: #F1FFF2;
+    --mc: #00E676;
+    --dc: #0A0A0A; */
+
+    --lc: #E2D1A4;
+    --mc: #85754E;
+    --dc: #121212;
+
+}
+
+*, *::before, *::after {margin: 0; padding:0; border: 0; box-sizing: border-box;}
+
+body {
+    font-family: var(--fb);
+    background-color: var(--mc);
+    color: var(--dc);
+}
+
+h1 {
+    font-family: var(--ft);
+}
+
+h2 {
+    font-family: var(--ft);
+    color: var(--mc);
+    text-shadow: 1px 1px 1px var(--dc);
+    padding: 0px 0px 10px 0px;
+}
+
+.header {
+    background-image: linear-gradient(to bottom, var(--dc), var(--mc));
+    color: var(--lc);
+    text-shadow: 1px 1px 1px var(--dc);
+    text-align: center;
+    padding: 20px 0px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.7);
+}
+
+.footer {
+    background-color: var(--dc);
+    color: var(--lc);
+    text-align: center;
+    padding: 10px 0px;
+}
+
+main {
+    /* min-height: 100vh; */
+    background-color: var(--dc);
+    max-width: 800px;
+    padding: 50px 10px 50px 10px;
+    margin: auto;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.7);
+}
+
+.section {
+    background-color: var(--lc);
+    max-width: 500px;
+    margin: 0px auto 50px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(255,255,255,.7);
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    margin: auto;
+    background-color: var(--mc);
+    color: var(--dc);
+    font-family: var(--ft);
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(255,255,255,.7);
+    max-width: 500px;
+}
+
+.label{
+    font-weight: 600;
+}
+
+.inputtext {
+    background-color: transparent;
+    margin-left: 5px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    border: 1px solid var(--mc);
+    margin-bottom: 10px;
+}
+
+.resp {
+    background-color: transparent;
+    margin-left: 5px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    border: 1px solid var(--mc);
+    margin-bottom: 10px;   
+}
+
+.bold {
+    font-weight: 600;
+}
